@@ -158,4 +158,14 @@ class CustomModel(QAbstractItemModel):
         self.endRemoveColumns()
         return True
 
-    ```
+```
+
+# QTabwidget
+
+## indexof
+根据tab的标签页对象获取tab的索引
+```python
+tab = QWidget()
+tabwidget.addTab(tab, 'tab')
+index = tabwidget.indexOf(tab)
+```
